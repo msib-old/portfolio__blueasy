@@ -1,0 +1,31 @@
+.twitter {
+  padding: 78px 0 65px;
+}
+
+.twitter__inner {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -1px;
+
+    width: 28px;
+    height: 22px;
+
+    background: url("../images/icon-twitter.png") no-repeat center;
+  }
+}
+
+.twitter__text {
+  margin: 0;
+
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.twitter__link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}

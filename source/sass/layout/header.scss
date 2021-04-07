@@ -1,0 +1,19 @@
+.header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba($color-base-dark, 0.85);
+
+  &__inner {
+    margin: 62px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__menu {
+  margin-top: 3px;
+  margin-right: -15px;
+}

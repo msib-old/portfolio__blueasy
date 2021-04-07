@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  min-width: 1200px;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  @include font-size(14, 24);
+  font-family: "SegoeUI", sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $color-base;
+}
+
+.page {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}

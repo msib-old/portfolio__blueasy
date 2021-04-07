@@ -1,0 +1,31 @@
+.testimonials {
+  padding: 78px 0 60px;
+}
+
+.testimonials__inner {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+
+    width: 32px;
+    height: 26px;
+
+    background: url("../images/icon-quote.png") no-repeat center;
+  }
+}
+
+.testimonials__quote {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.testimonials__author {
+  color: $color-highlight;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 50px;
+}

@@ -1,0 +1,42 @@
+.footer {
+  padding: 71px 0;
+
+  font-size: 12px;
+  font-weight: 500;
+  color: $color-base;
+
+  background-color: $color-base-dark;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__navigation {
+  text-transform: uppercase;
+}
+
+.footer__navigation-inner {
+  & + &::before {
+    content: "|";
+    margin: 0 13px;
+  }
+}
+
+.footer__navigation-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:focus {
+    color: $color-alternative;
+  }
+
+  &:hover {
+    color: $color-highlight;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+}

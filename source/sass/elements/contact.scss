@@ -1,0 +1,15 @@
+.contact {
+  padding: 78px 0 80px;
+
+  font-weight: 500;
+
+  background: url("../images/contact_background_photo.jpg") no-repeat center / cover;
+}
+
+.contact__description {
+  margin: 20px 0 29px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

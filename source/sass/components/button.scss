@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  padding: 8px 38px;
+
+  font-weight: bold;
+  color: $color-base-dark;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid $color-base-dark;
+
+  &:focus,
+  &:hover {
+    border: 2px solid $color-alternative;
+    color: $color-alternative;
+  }
+
+  &--social {
+    color: $color-alternative;
+    border: 2px solid $color-alternative;
+
+    &:focus,
+    &:hover {
+      border: 2px solid $color-highlight;
+    }
+  }
+
+  &--highlight {
+    padding: 22px 38px;
+    width: 370px;
+    border: none;
+    color: $color-alternative;
+    background-color: $color-highlight;
+
+    &:focus,
+    &:hover {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@mixin list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@mixin link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin pseudo($pos:absolute) {
+  content: "";
+  position: $pos;
+  display: block;
+}
+
+@mixin list-flex {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin font-size($size, $height: false) {
+  font-size: $size + px;
+
+  @if $height {
+    line-height: $height + px;
+  }
+}
+
+@mixin services-icon($service) {
+  @include pseudo("relative");
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/service_#{$service}.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}

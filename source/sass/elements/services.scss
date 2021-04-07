@@ -1,0 +1,54 @@
+.services {
+  padding: 78px 0 76px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list;
+}
+
+.services__item {
+  position: relative;
+  margin-top: 13px;
+  width: 270px;
+
+  &--coffee .services__link::before {
+    @include services-icon("coffee");
+  }
+
+  &--instant .services__link::before {
+    @include services-icon("instant");
+  }
+
+  &--serious .services__link::before {
+    @include services-icon("serious");
+  }
+
+  &--frame .services__link::before {
+    @include services-icon("frame");
+  }
+
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.services__link {
+  @include font-size(12, 18);
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.services__caption {
+  margin: 22px 0 16px 0;
+
+  @include font-size(24);
+  text-transform: uppercase;
+}
+
+.services__text {
+  margin: 0;
+}

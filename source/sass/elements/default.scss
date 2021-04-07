@@ -1,0 +1,31 @@
+.default {
+  padding: 78px 0 73px;
+}
+
+.default__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+$default-gap: $page-gap + 20;
+
+.default__column {
+  width: calc(50% - #{$default-gap / 2});
+}
+
+.default__title {
+  margin-bottom: 46px;
+}
+
+.default__text {
+  margin: 24px 0;
+  max-width: 470px;
+
+  &:last-of-type {
+    margin-bottom: 33px;
+  }
+}
+
+.default__video {
+  margin-top: 2px;
+}

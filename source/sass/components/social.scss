@@ -1,0 +1,40 @@
+.social__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  line-height: 0;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 16px;
+  line-height: 0;
+}
+
+.social__link {
+  line-height: 0;
+  display: block;
+  width: 64px;
+  height: 64px;
+
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--twitter {
+    background-image: url("../images/icon-twitter.png");
+  }
+
+  &--google-plus {
+    background-image: url("../images/icon-google-plus.png");
+  }
+
+  &--dribbble {
+    background-image: url("../images/icon-dribbble.png");
+  }
+
+  &--coffee {
+    background-image: url("../images/icon-cup.png");
+  }
+}

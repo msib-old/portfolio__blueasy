@@ -1,0 +1,32 @@
+.menu {
+  @include font-size(14);
+  color: $color-alternative;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &__list {
+    @include list-flex;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+
+  &__link {
+    padding: 6px 17px;
+
+    color: inherit;
+    text-decoration: none;
+
+    &:focus {
+      color: $color-highlight;
+    }
+
+    &:hover {
+      outline: 2px solid $color-highlight;
+      color: $color-highlight;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// Содержит все CSS-файлы из внешних библиотек и фреймворков
+@import "vendors/normalize.scss";
+
+// Каждая глобальная переменная, функция и примесь должна быть помещена сюда.
+@import "abstracts/variables.scss";
+@import "abstracts/mixins.scss";
+
+// Файл сброса, некоторые типографские правила, и, вероятно, стили, определяющие некоторые стандартные стили для часто используемых элементов HTML
+@import "base/fonts.scss";
+@import "base/helpers.scss";
+@import "base/base.scss";
+
+// Layout - Основные части сайта (шапка, подвал, навигация, боковая панель, сетки, формы)
+@import "layout/header.scss";
+@import "layout/menu.scss";
+@import "layout/footer.scss";
+
+// Components - для более мелких компонентов (слайдер, загрузчик, и т.п. виджетов)
+@import "components/button.scss";
+@import "components/social.scss";
+@import "components/form.scss";
+
+// Pages - стили специфичные для определённой страницы
+
+// Elements - элементы страницы не являющиеся компонентами
+@import "elements/logo.scss";
+@import "elements/section.scss";
+@import "elements/title.scss";
+@import "elements/hero.scss";
+@import "elements/services.scss";
+@import "elements/portfolio.scss";
+@import "elements/default.scss";
+@import "elements/twitter.scss";
+@import "elements/who-is.scss";
+@import "elements/testimonials.scss";
+@import "elements/contact.scss";
